@@ -1,0 +1,181 @@
+
+
+  
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header.hero {
+      background: url('https://images.adsttc.com/media/images/5e4c/1025/6ee6/7e0b/9d00/0877/large_jpg/feature_-_Main_hall_1.jpg?1582043123') center/cover no-repeat;
+      height: 90vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(91, 84, 84, 0.6);
+    }
+
+    .navbar .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffbb00;
+    }
+
+    .hero-text {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .hero-text h2 {
+      font-size: 3rem;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      color: #b84f29;
+    }
+
+    .menu-filters {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .menu-filters button {
+      background: #b84f29;
+      color: white;
+      border: none;
+      padding: 0.5rem 1.2rem;
+      margin: 0.3rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .menu-filters button:hover {
+      background: #ff8147;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .gallery-container {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery-container img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    #reservation-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    #reservation-form input,
+    #reservation-form button {
+      padding: 0.75rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    #reservation-form button {
+      background-color: #b84f29;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #reservation-form button:hover {
+      background-color: #ff8147;
+    }
+
+    #confirmation-message {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: green;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .social-icons {
+      margin: 1rem 0;
+    }
+
+    .social-icons a img {
+      width: 30px;
+      margin: 0 10px;
+      filter: brightness(0) invert(1);
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        transition: left 0.3s;
+      }
+    }
+
